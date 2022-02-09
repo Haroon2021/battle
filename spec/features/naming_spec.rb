@@ -4,10 +4,7 @@
 
 feature "entering player names" do
   scenario "submit names" do
-    visit('/')
-    fill_in :player_name_1, with: "Haroon the Invincible"
-    fill_in :player_name_2, with: "Bromley the Great"
-    click_button "Enter Gladiators"
+    sign_in_and_play
     expect(page).to have_content 'Haroon the Invincible vs Bromley the Great'
   end
 end

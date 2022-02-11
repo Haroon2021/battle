@@ -5,7 +5,7 @@
 feature "entering player names" do
   scenario "submit names" do
     sign_in_and_play
-    expect(page).to have_content 'Haroon the Invincible vs Bromley the Great'
+    expect(page).to have_content 'Haroon vs Bromley'
   end
 end
 

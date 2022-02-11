@@ -2,3 +2,10 @@
 
 <%=@player_name_two%> has 20HP
 
+<form action="/attack" method=post>
+  <input type="submit" value="Attack Player 2">
+</form>
+
+<% if @player1_attacked %>
+  <%=@player_name_one%> attacks <%=@player_name_two%>
+<% end%>

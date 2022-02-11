@@ -5,7 +5,7 @@
 feature 'See player 2 HP' do
   scenario "Player 1  can see player 2 HP" do
     sign_in_and_play
-    expect(page).to have_content 'Bromley the Great has 20HP'
+    expect(page).to have_content 'Bromley has 20HP'
   end
 
 end
